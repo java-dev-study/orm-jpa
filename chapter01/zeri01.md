@@ -35,7 +35,7 @@ ORM(Object-Relational Mapping)은 그대로 객체와 관계형 데이터베이�
   
 - 왜 JPA를 사용해야 하는가?
   - 생산성
-    - ~~~ 
+    - ~~~ Java
       jpa.persist(member); //저장
       Member member = jpa.find(memberId) // 조회
       ~~~
