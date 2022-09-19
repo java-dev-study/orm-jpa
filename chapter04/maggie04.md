@@ -21,7 +21,7 @@
 - NOT NULL , LENGTH , Unique 제약조건 등 DDL 생성 시에만 사용
 - JPA 실행로직에는 영향 없음 
 
-#### 4.6 기본 키 매핑 
+#### 4.5/4.6 기본 키 매핑 
 - 키 생성 시, hibernate.id.new_generator_mappings=true 속성 지정 필수 
 - @Id 에 @GeneratedValue 추가 
 - 직접할당 : test.setId("id1")
@@ -29,4 +29,16 @@
   -- IDENTITY : 데이터 베이스에 insert 후 기본 키값 조회 가능 (@GeneratedValue 의 GenerationType.IDENTITY)
   -- SEQUENCE : 데이터 베이스에서 식별자조회 후, 엔티티에 할당 및 영속 컨택스트에 저장 (@SequenceGenerator)
   -- TABLE : 키 생성 전용 테이블 생성 후 매핑 (@TableGenerator)
-- AUTO 전략 : 
+- AUTO 전략 : 데이터 베이스에 따라 자동 설정 
+
+-> 대리 키 사용하자 
+
+#### 4.7 필드와 컬럼 매핑 
+- @Colum
+- @Enumerated
+- @Temporal
+- @Lob
+- @Transient
+- @Access
+
+어노테이션들의 상세 속성이나 사용법은 추후 하면서 찾으면서 하면 될듯.. 
