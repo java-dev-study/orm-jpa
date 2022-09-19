@@ -25,11 +25,10 @@
 - 키 생성 시, hibernate.id.new_generator_mappings=true 속성 지정 필수 
 - @Id 에 @GeneratedValue 추가 
 - 직접할당 : test.setId("id1")
-- 자동 생성 
-  -- IDENTITY : 데이터 베이스에 insert 후 기본 키값 조회 가능 (@GeneratedValue 의 GenerationType.IDENTITY)
-  -- SEQUENCE : 데이터 베이스에서 식별자조회 후, 엔티티에 할당 및 영속 컨택스트에 저장 (@SequenceGenerator)
-  -- TABLE : 키 생성 전용 테이블 생성 후 매핑 (@TableGenerator)
-- AUTO 전략 : 데이터 베이스에 따라 자동 설정 
+- IDENTITY : 데이터 베이스에 insert 후 기본 키값 조회 가능 (@GeneratedValue 의 GenerationType.IDENTITY)
+- SEQUENCE : 데이터 베이스에서 식별자조회 후, 엔티티에 할당 및 영속 컨택스트에 저장 (@SequenceGenerator)
+- TABLE : 키 생성 전용 테이블 생성 후 매핑 (@TableGenerator)
+- TABLE : 키 생성 전용 테이블 생성 후 매핑 (@TableGenerator)
 
 -> 대리 키 사용하자 
 
